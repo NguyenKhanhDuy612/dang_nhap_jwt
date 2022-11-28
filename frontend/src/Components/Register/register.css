@@ -1,0 +1,84 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  border-radius: 12px;
+  height: 400px;
+  min-width: 20%;
+  background-color: rgb(218, 218, 218);
+  text-align: center;
+}
+
+.register-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.register-error {
+  margin-top: 1rem;
+  align-self: center;
+  color: rgb(255, 0, 55);
+}
+/* form {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+input {
+  border: none;
+  padding: 0.35rem;
+  font-family: "Inter", sans-serif;
+  margin: 0.75rem 0;
+  border-radius: 4px;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.65rem;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(161, 161, 161);
+} */
+.box-register {
+  /* margin-top: 50px; */
+  position: relative;
+  width: 380px;
+  height: 520px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.box-register::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 520px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.box-register::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
